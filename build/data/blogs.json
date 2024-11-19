@@ -1,0 +1,74 @@
+[
+        {
+                "id": 1,
+                "author": "Maher Saleh",
+                "title": "Front-end",
+                "body": "This is what users interact with directly, including the website's layout, design, and user experience. Technologies like HTML, CSS, and JavaScript frameworks such as React, Angular, or Vue.js are commonly used."
+        },
+        {
+                "id": 2,
+                "author": "Maher Saleh",
+                "title": "Back-end",
+                "body": "This is where the magic happens behind the scenes. The server, database, and application logic come together here, powered by technologies like Node.js, Python (Django/Flask), or PHP."
+        },
+        {
+                "id": 3,
+                "author": "Maher Saleh",
+                "title": "Learn the Basics",
+                "body": "start with HTML, CSS, and JavaScript. These are the foundations of web development."
+        },
+        {
+                "id": 4,
+                "author": "Maher Saleh",
+                "title": "Learn the Basics",
+                "body": "start with HTML, CSS, and JavaScript. These are the foundations of web development."
+        },
+        {
+                "id": 5,
+                "author": "Maher Saleh",
+                "title": "Dive into Frameworks",
+                "body": "Explore front-end frameworks like React or Angular for building dynamic user interfaces."
+        },
+        {
+                "id": 6,
+                "author": "Maher Saleh",
+                "title": "Understand Back-end Development",
+                "body": "Learn server-side languages like Node.js, Python, or Ruby, and understand APIs."
+        },
+        {
+                "id": 7,
+                "author": "Maher Saleh",
+                "title": "Master Databases",
+                "body": "Work with SQL (MySQL/PostgreSQL) and NoSQL (MongoDB) databases to store and retrieve data."
+        },
+        {
+                "id": 8,
+                "author": "Maher Saleh",
+                "title": "Practice, Practice, Practice",
+                "body": "Build projects, contribute to open source, and participate in coding challenges."
+        },
+        {
+                "id": 9,
+                "author": "Maher Saleh",
+                "title": "Code Editors",
+                "body": "Visual Studio Code is a favorite among developers for its versatility and extensions."
+        },
+        {
+                "id": 10,
+                "author": "Maher Saleh",
+                "title": "Version Control",
+                "body": "Git and GitHub allow developers to track changes and collaborate effectively."
+        },
+        {
+                "id": 11,
+                "author": "Maher Saleh",
+                "title": "Package Managers",
+                "body": "Tools like npm or Yarn make managing dependencies easier."
+        },
+        {
+                "id": 12,
+                "author": "Maher Saleh",
+                "title": "Deployment Platforms",
+                "body": "Platforms like Netlify, Vercel, or AWS make deploying your projects seamless."
+        }
+]

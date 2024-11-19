@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0632d35.css",
+    "main.js": "/static/js/main.00cab9d8.js",
+    "static/js/453.5e560239.chunk.js": "/static/js/453.5e560239.chunk.js",
+    "static/media/ARIBLK.woff": "/static/media/ARIBLK.a56bf3900a2cdeec6415.woff",
+    "index.html": "/index.html",
+    "main.a0632d35.css.map": "/static/css/main.a0632d35.css.map",
+    "main.00cab9d8.js.map": "/static/js/main.00cab9d8.js.map",
+    "453.5e560239.chunk.js.map": "/static/js/453.5e560239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0632d35.css",
+    "static/js/main.00cab9d8.js"
+  ]
+}
