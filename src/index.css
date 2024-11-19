@@ -1,13 +1,370 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+  font-family: 'Quicksand';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* navbar */
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: fixed;
+  width: calc(100% - 40px);
+  top: 0;
+  background-color: #efefef;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar .title {
+  padding: 20px 0;
+  margin: 0;
+  font-size: 26px;
+  transition: .3s ease-in-out;
+}
+
+.navbar .links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  transition: .3s ease-in-out;
+  overflow: hidden;
+}
+
+.navbar .links a {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  padding: 20px 10px;
+  align-items: center;
+}  
+
+.navbar .links .active {
+  background-color: #f1256d;
+  color:white;
+}
+
+.navbar .title {
+  color: #f1256d;
+}
+
+/* blog previews */
+
+a:-webkit-any-link {
+  text-decoration: none !important;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+.blog-container {
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.blog-container:hover {
+  background-color: #f9f9f9;
+  box-shadow: 1px 3px 5px #00000010;
+  border-radius: 4px;
+}
+
+.blog-preview {
+  border-bottom: 1px solid #fafafa;
+  display: flex;
+  gap: 4px;
+  width: 100%;
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1256d;
+  margin: 0;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  transition: .3s ease-in-out;
+}
+
+.blog-preview p {
+  font-size: 16px;
+  margin: 0;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  color: #393939;
+  transition: .3s ease-in-out;
+}
+
+.blog-preview p::before {
+  content: '- by';
+  color: #393939;
+  margin-right: 4px;
+}
+
+.blog-container button {
+  font-weight: bolder;
+  font-size: 18px;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  min-height: 26px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #f1256d;
+  border-radius: 4px;
+  border: 1px solid red;
+  color: #ffffff;
+  margin-left: auto;
+  box-shadow: 0px 0px 4px #494949;
+  visibility: hidden;
+}
+
+.blog-container button:active {
+  box-shadow: unset !important;
+}
+
+.blog-container:hover button {
+  visibility: visible;
+}
+
+/* Loader */
+div.loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min-content;
+    height: min-content;
+}
+
+.lds-ripple,
+.lds-ripple div {
+    box-sizing: border-box;
+}
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid currentColor;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 8px;
+        height: 8px;
+        opacity: 0;
+    }
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 8px;
+        height: 8px;
+        opacity: 0;
+    }
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
+
+/* footer */
+
+
+@font-face {
+    font-family: 'ArialBlk';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/public//fonts/ARIBLK.woff') format('woff');
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    background-color: #c5c5c5;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: 'ArialBlk';
+}
+
+p.footerP {
+    font-size: 12px;
+    margin: 0;
+}
+p, span {
+    font-family: inherit;
+    letter-spacing: -1px;
+    color: #888;
+}
+
+span:nth-child(2) {
+    color: #636363;
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  top: 50%;
+  position: relative;
+  justify-content: center;
+  height: max-content;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 400px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  position: absolute;
+  left: 50%;
+}
+
+form * {
+  color: #393939;
+}
+
+form *:not(label, div, button, h2) {  
+  border: 1px solid #00000010;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 5px;
+}
+
+form *:not(label, button, div):focus {
+  box-shadow: 0px 0px 6px #f1256d;
+}
+
+form h2 {
+  color: #414141;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form label {
+  margin-bottom: 4px;
+}
+
+form input, button {
+  height: 40px;
+  font-size: 16px;
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: #f1256d;
+  border-radius: 4px;
+  border: 1px solid red;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px #494949;
+  cursor: pointer;
+}
+
+form button:active {
+  box-shadow: unset !important;
+}
+
+/* blog details */
+.blog-details .blog {
+  padding: 20px;
+}
+
+.blog-details .blog .blog-body {
+  margin-bottom: 5px;
+  min-height: 200px;
+  height: max-content;
+}
+
+.blog-details .blog h2 {
+  transition: .3s ease-in-out;
+}
+
+.blog-details .blog p {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+  transition: .3s ease-in-out;
+}
+
+.blog-details .blog small {
+  color: #515151;
+  font-style: italic;
+  border-top: 1px solid #00000030;
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar .title {
+    font-size: 18px;
+  }
+
+  .navbar .links {
+    font-size: 14px;
+  }
+
+  .blog-preview {
+    flex-direction: column;
+  }
+
+  .blog-preview h2 {
+    font-size: 16px;
+  }
+
+  .blog-preview p {
+    font-size: 14px;
+  }
+  
+  .blog-preview p::before {
+    content: '';
+    display: none;
+  }
+
+  .blog-details .blog h2 {
+    font-size: 18px;
+  }
+
+  .blog-details .blog p {
+    font-size: 16px;
+  }
+
+  form {
+    width: 80%;
+  }
 }
