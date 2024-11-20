@@ -373,6 +373,16 @@ form button:active {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .navbar .title {
+    font-size: 13px;
+  }
+
+  .navbar .links {
+    font-size: 10px;
+  }
+}
+
 /* about */
 div.about {
     margin: 50px;
