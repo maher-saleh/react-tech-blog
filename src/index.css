@@ -391,7 +391,10 @@ div.about * {
 }
 
 div.about p:nth-child(3),
-div.about p:nth-child(4) {
+div.about p:nth-child(4),
+div.about p:nth-child(5),
+div.about p:nth-child(6),
+div.about p:nth-child(7) {
     margin-left: 20px;
 }
 
