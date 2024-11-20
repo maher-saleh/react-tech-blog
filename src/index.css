@@ -368,3 +368,39 @@ form button:active {
     width: 80%;
   }
 }
+
+/* about */
+div.about {
+    margin: 50px;
+    margin-top: 150px;
+    transition: .3s ease-in-out;
+}
+
+div.about h1 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+div.about * {
+    color: #000d4f;
+    font-size: 20px;
+}
+
+div.about p:nth-child(3),
+div.about p:nth-child(4) {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    div.about {
+      margin: 110px 20px 40px 20px;
+    }
+    
+    div.about h1 {
+      font-size: calc(16px + 1vw);
+    }
+
+    div.about p {
+        font-size: calc(12px + 1vw);
+    }
+}
